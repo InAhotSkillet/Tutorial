@@ -17,6 +17,15 @@
             "readmeText": "Maslow Create is a new type of CAD program where you define the thing you want to create logically, rather than by drawing. Each project is composed of Atoms and Molecules. Each atom performs one logical task like rotating the shape, each Molecule can contain any number of inter connected Atoms. To place an atom or molecule right click anywhere on the flow drawing canvas."
         },
         {
+            "atomType": "Readme",
+            "name": "README",
+            "x": 0.31321184510250566,
+            "y": 0.6724137931034483,
+            "uniqueID": 800690,
+            "ioValues": [],
+            "readmeText": "Molecules like this one let you layer your model to create more space. Real estate on the screen is intentionally limited to keep projects from becoming cluttered. There is no limit to how deep you can logically nest Atoms in Molecules"
+        },
+        {
             "atomType": "Rectangle",
             "name": "Rectangle",
             "x": 0.595703125,
@@ -30,6 +39,19 @@
                 {
                     "name": "y length",
                     "ioValue": 20
+                }
+            ]
+        },
+        {
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.7630979498861047,
+            "y": 0.1724137931034483,
+            "uniqueID": 606028,
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 10
                 }
             ]
         },
@@ -63,23 +85,23 @@
             "max": 20
         },
         {
-            "atomType": "Circle",
-            "name": "Circle",
-            "x": 284,
-            "y": 291,
-            "uniqueID": 606028,
+            "atomType": "Extrude",
+            "name": "Extrude",
+            "x": 0.9248291571753987,
+            "y": 0.30603448275862066,
+            "uniqueID": 934230,
             "ioValues": [
                 {
-                    "name": "diameter",
-                    "ioValue": 10
+                    "name": "height",
+                    "ioValue": 20
                 }
             ]
         },
         {
             "atomType": "Translate",
             "name": "Translate",
-            "x": 508,
-            "y": 59,
+            "x": 0.7847826086956522,
+            "y": 0.7887931034482758,
             "uniqueID": 636389,
             "ioValues": [
                 {
@@ -95,28 +117,6 @@
                     "ioValue": 10
                 }
             ]
-        },
-        {
-            "atomType": "Extrude",
-            "name": "Extrude",
-            "x": 518,
-            "y": 287,
-            "uniqueID": 934230,
-            "ioValues": [
-                {
-                    "name": "height",
-                    "ioValue": 20
-                }
-            ]
-        },
-        {
-            "atomType": "Readme",
-            "name": "README",
-            "x": 702,
-            "y": 56,
-            "uniqueID": 800690,
-            "ioValues": [],
-            "readmeText": "Molecules like this one let you layer your model to create more space. Real estate on the screen is intentionally limited to keep projects from becoming cluttered. There is no limit to how deep you can logically nest Atoms in Molecules"
         },
         {
             "atomType": "Difference",
@@ -294,6 +294,13 @@
             "ap1Name": "geometry",
             "ap2Name": "geometry",
             "ap2Primary": true,
+            "ap1ID": 606028,
+            "ap2ID": 934230
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
             "ap1ID": 225460,
             "ap2ID": 636389
         },
@@ -306,23 +313,16 @@
         },
         {
             "ap1Name": "geometry",
-            "ap2Name": "geometry",
-            "ap2Primary": true,
-            "ap1ID": 606028,
-            "ap2ID": 934230
+            "ap2Name": "geometry1",
+            "ap2Primary": false,
+            "ap1ID": 934230,
+            "ap2ID": 449683
         },
         {
             "ap1Name": "geometry",
             "ap2Name": "geometry2",
             "ap2Primary": false,
             "ap1ID": 636389,
-            "ap2ID": 449683
-        },
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "geometry1",
-            "ap2Primary": false,
-            "ap1ID": 934230,
             "ap2ID": 449683
         },
         {
